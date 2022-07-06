@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 					res++;
 					break;
 				default:
-					break;
+					return (-1);
 			}
 
 		}
@@ -45,7 +45,9 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			res++;
 		}
-	}
+	}	
 	va_end(arg_ptr);
+	if (!format)
+		return (-1)
 	return (res);
 }
