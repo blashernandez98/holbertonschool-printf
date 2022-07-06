@@ -1,4 +1,4 @@
-#include "printf.h"
+#include "main.h"
 #include <stdarg.h>
 #include <string.h>
 #include <stdio.h>
@@ -19,16 +19,15 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					putchar(va_arg(arg_ptr, int));
+					_putchar(va_arg(arg_ptr, int));
 					res++;
 					break;
 				case 's':
 					aux_str = va_arg(arg_ptr, char *);
-					puts(aux_str);
-					res += strlen(aux_str);
+					res += puts(aux_str);
 					break;
 				case '%':
-					putchar('%');
+					_putchar('%');
 					res++;
 					break;
 				default:
@@ -38,7 +37,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			putchar(format[i]);
+			_putchar(format[i]);
 			res++;
 		}
 	}
