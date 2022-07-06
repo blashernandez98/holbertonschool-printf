@@ -31,11 +31,15 @@ int _printf(const char *format, ...)
 					res += _puts(aux_str);
 					break;
 				case '\0':
-					break;
+					return (-1);
 				default:
 					_putchar('%');
-					_putchar(format[i]);
-					res += 2;
+					res++;
+					if (format[i] != '%')
+					{
+						_putchar(format[i]);
+						res++;
+					}
 					break;
 			}
 
