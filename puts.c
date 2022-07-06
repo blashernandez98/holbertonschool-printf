@@ -11,11 +11,21 @@ int _puts(char *s)
 {
 	int len = 0;
 
-	while (*s != '\0')
+	while (s && *s)
 	{
 		_putchar(*s);
 		s++;
 		len++;
+	}
+	if (!s)
+	{
+		_putchar("(");
+		_putchar("n");
+		_putchar("u");
+		_putchar("l");
+		_putchar("l");
+		_putchar(")");
+		len = 6;
 	}
 	return (len);
 }
