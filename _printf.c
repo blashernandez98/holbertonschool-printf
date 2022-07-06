@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 					break;
 				case 's':
 					aux_str = va_arg(arg_ptr, char *);
-					res += puts(aux_str);
+					res += _puts(aux_str);
 					break;
 				case '%':
 					_putchar('%');
