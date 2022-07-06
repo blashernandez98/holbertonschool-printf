@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 					break;
 				default:
 					_putchar('%');
-					_putchar(va_arg(arg_ptr, int));
+					_putchar(format[i]);
 					res += 2;
 					break;
 			}
