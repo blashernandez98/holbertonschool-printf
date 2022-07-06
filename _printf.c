@@ -1,14 +1,20 @@
 #include "main.h"
 #include <stdarg.h>
 
+/**
+ * _printf - Similar to printf.
+ * @format: Format string.
+ *
+ * Return: Number of chars to stdout
+ */
+
 int _printf(const char *format, ...)
 {
 	va_list arg_ptr;
 	char *aux_str;
 	int i, res = 0;
 
-	if (format)
-		va_start(arg_ptr, 0);
+	va_start(arg_ptr, 0);
 
 	for (i = 0; (format && format[i]); i++)
 	{
