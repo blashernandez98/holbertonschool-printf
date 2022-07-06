@@ -19,12 +19,12 @@ int _puts(char *s)
 	}
 	if (!s)
 	{
-		_putchar("(");
-		_putchar("n");
-		_putchar("u");
-		_putchar("l");
-		_putchar("l");
-		_putchar(")");
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
 		len = 6;
 	}
 	return (len);
