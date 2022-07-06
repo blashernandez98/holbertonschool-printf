@@ -7,7 +7,8 @@ int _printf(const char *format, ...)
 	char *aux_str;
 	int i, res = 0;
 
-	va_start(arg_ptr, 0);
+	if (format)
+		va_start(arg_ptr, 0);
 
 	for (i = 0; (format && format[i]); i++)
 	{
