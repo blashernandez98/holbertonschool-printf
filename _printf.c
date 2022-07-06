@@ -48,6 +48,6 @@ int _printf(const char *format, ...)
 	}	
 	va_end(arg_ptr);
 	if (!format)
-		return (-1)
+		return (-1);
 	return (res);
 }
