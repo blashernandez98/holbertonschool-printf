@@ -26,6 +26,6 @@ int _printf(const char *format, ...)
 			res += _putchar(format[i]);
 	}
 	if (!format)
-		return(-1)
+		return(-1);
 	return (res);
 }
