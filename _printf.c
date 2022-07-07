@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
+#include <stddef.h>
 
 /**
  * _printf - Similar to printf.
@@ -14,8 +15,10 @@ int _printf(const char *format, ...)
 	int (*f)(va_list);
 	int i, res = 0;
 
+	if (!format)
+		return (-1);
 	va_start(arg_ptr, 0);
-	for (i = 0; format && format[i]; i++)
+	for (i = 0; format[i]; i++)
 	{
 		if (format[i] == '%')
 		{
@@ -23,7 +26,15 @@ int _printf(const char *format, ...)
 			if (format[i])
 			{
 				f = get_spec(format[i]);
-				res += (*f)(arg_ptr);
+				if (!f)
+				{
+					_putchar('%');
+					_putchar(format[i]);
+					res = res + 2;
+					continue;
+				}
+				else
+					res += (*f)(arg_ptr);
 			}
 			else
 				return (-1);
@@ -31,7 +42,6 @@ int _printf(const char *format, ...)
 		else
 			res += _putchar(format[i]);
 	}
-	if (!format)
-		return(-1);
+	va_end(arg_ptr);
 	return (res);
 }

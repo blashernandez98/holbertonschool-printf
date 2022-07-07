@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stddef.h>
 
-/*
-*
-*
+/**
+* get_spec - map a char with a function
+* @s: char
+* Return: NULL or a pointer function
 */
 
 int (*get_spec(char s))(va_list)
