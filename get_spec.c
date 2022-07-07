@@ -15,7 +15,7 @@ int (*get_spec(char s))(va_list)
 	};
 	int i;
 
-	for (i = 0; i < 2; i++)
+	for (i = 0; i < 3; i++)
 	{
 		if (s == specs[i].spec)
 			return (specs[i].f);

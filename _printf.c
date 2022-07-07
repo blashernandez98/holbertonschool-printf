@@ -19,8 +19,14 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			f = get_spec(format[++i]);
-			res += (*f)(arg_ptr);
+			i++
+			if (format[i])
+			{
+				f = get_spec(format[i]);
+				res += (*f)(arg_ptr);
+			}
+			else
+				return (-1);
 		}
 		else
 			res += _putchar(format[i]);
