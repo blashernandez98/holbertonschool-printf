@@ -11,47 +11,19 @@
 int _printf(const char *format, ...)
 {
 	va_list arg_ptr;
-	char *aux_str;
+	int (*f)(va_list);
 	int i, res = 0;
 
 	va_start(arg_ptr, 0);
-	for (i = 0; (format && format[i]); i++)
+	for (i = 0; format && format[i]; i++)
 	{
 		if (format[i] == '%')
 		{
-			i++;
-			switch (format[i])
-			{
-				case 'c':
-					_putchar(va_arg(arg_ptr, int));
-					res++;
-					break;
-				case 's':
-					aux_str = va_arg(arg_ptr, char *);
-					res += _puts(aux_str);
-					break;
-				case '\0':
-					return (-1);
-				default:
-					_putchar('%');
-					res++;
-					if (format[i] != '%')
-					{
-						_putchar(format[i]);
-						res++;
-					}
-					break;
-			}
-
+			f = get_spec(format[++i]);
+			res += (*f)(arg_ptr);
 		}
 		else
-		{
-			_putchar(format[i]);
-			res++;
-		}
+			res += _putchar(format[i]);
 	}
-	va_end(arg_ptr);
-	if (!format)
-		return (-1);
 	return (res);
 }
