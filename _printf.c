@@ -25,5 +25,7 @@ int _printf(const char *format, ...)
 		else
 			res += _putchar(format[i]);
 	}
+	if (!format)
+		return(-1)
 	return (res);
 }
