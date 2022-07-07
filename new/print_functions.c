@@ -27,3 +27,12 @@ int f_percent(va_list arg_ptr)
 {
 	return (_putchar('%'));
 }
+
+/**
+ *
+ */
+
+int f_nil(va_list arg_ptr)
+{
+	return (0);
+}

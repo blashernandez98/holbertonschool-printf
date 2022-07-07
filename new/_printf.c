@@ -17,16 +17,14 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			i++;
-			func = get_spec_func(format[i]);
-		}
-		if (format[i] == '%' && func)
-		{
-			res += (*func)(arg_ptr);
+			func = get_spec_func(format[++i]);
+			if (func)
+				res += (*func)(arg_ptr);
+			else
+				res += (_putchar('%') + _putchar(format[i]));
 		}
 		else
-		{
-
-		}
-	}	
+			res += _putchar(format[i]);
+	}
+	return (res);
 }

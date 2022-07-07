@@ -14,6 +14,8 @@ int _puts(char *);
 
 int f_ch(va_list);
 int f_str(va_list);
+int f_percent(va_list);
+int f_nil(va_list);
 
 int (*get_spec_func(char))(va_list);
 #endif
