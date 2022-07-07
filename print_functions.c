@@ -31,5 +31,5 @@ int f_str(va_list arg_ptr)
 
 int f_percent(va_list arg_ptr)
 {
-	return (_putchar('%'));
+	return (_putchar(va_arg(arg_ptr, char)));
 }
