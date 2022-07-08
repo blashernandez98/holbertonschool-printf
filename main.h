@@ -20,5 +20,5 @@ int f_nil(va_list);
 int f_nl(va_list);
 int f_int(va_list);
 
-int (*get_spec_func(char))(va_list);
+int (*get_spec(char))(va_list);
 #endif
