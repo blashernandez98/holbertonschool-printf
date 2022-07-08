@@ -23,9 +23,8 @@ int f_str(va_list arg_ptr)
  *
  */
 
-int f_percent(va_list arg_ptr)
+int f_percent(__attribute__((unused)) va_list arg_ptr)
 {
-	void(arg_ptr);
 	return (_putchar('%'));
 }
 
@@ -33,9 +32,8 @@ int f_percent(va_list arg_ptr)
  *
  */
 
-int f_nl(va_list arg_ptr)
+int f_nl(__attribute__((unused)) va_list arg_ptr)
 {
-	void(arg_ptr);
 	return (_putchar('\n'));
 }
 
@@ -43,8 +41,7 @@ int f_nl(va_list arg_ptr)
  *
  */
 
-int f_nil(va_list arg_ptr)
+int f_nil(__attribute__((unused)) va_list arg_ptr)
 {
-	void(arg_ptr);
 	return (0);
 }
