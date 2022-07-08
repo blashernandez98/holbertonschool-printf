@@ -2,7 +2,10 @@
 #include "main.h"
 
 /**
+ * f_int - Prints integer.
+ * @arg_ptr: Pointer to arg.
  *
+ * Return: Number of digits
  */
 
 int f_int(va_list arg_ptr)

@@ -3,10 +3,13 @@
 #include <stdlib.h>
 
 /**
+ * get_spec - Get correct function to print.
+ * @c: Specifier char.
  *
+ * Return: Pointer to function that prints.
  */
 
-int (*get_spec_func(char c))(va_list)
+int (*get_spec(char c))(va_list)
 {
 	int i;
 	spec_t spec_arr[] = {

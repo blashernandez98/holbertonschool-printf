@@ -3,7 +3,10 @@
 #include <stddef.h>
 
 /**
+ * _printf - Printf
+ * @format: Format string.
  *
+ * Return: Number of chars printed.
  */
 
 int _printf(const char *format, ...)

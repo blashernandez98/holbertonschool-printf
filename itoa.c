@@ -3,7 +3,7 @@
 /**
  * itoa - Print num in base b.
  * @num: Number to print.
- * @b: Base.
+ * @base: Base.
  *
  * Return: Number of digits printed.
  */
