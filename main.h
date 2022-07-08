@@ -10,7 +10,7 @@ typedef struct specifier
 int _printf(const char *, ...);
 int _putchar(char);
 int _puts(char *);
-int itoa(int, int);
+int itoa(unsigned int, unsigned int);
 
 int f_ch(va_list);
 int f_str(va_list);

@@ -8,7 +8,7 @@
  * Return: Number of digits printed.
  */
 
-int itoa(int num, int base)
+int itoa(unsigned int num, unsigned int base)
 {
 	int res = 0;
 	long int n = num;
