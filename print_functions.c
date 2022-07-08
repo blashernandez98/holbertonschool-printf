@@ -53,10 +53,10 @@ int f_nl(__attribute__((unused)) va_list arg_ptr)
  * f_nil - Print nothing
  * @arg_ptr: Pointer to arg.
  *
- * Return: 0
+ * Return: -1
  */
 
 int f_nil(__attribute__((unused)) va_list arg_ptr)
 {
-	return (0);
+	return (-1);
 }
