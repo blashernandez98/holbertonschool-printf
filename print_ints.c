@@ -22,7 +22,7 @@ int f_int(va_list arg_ptr)
 
 int f_bin(va_list arg_ptr)
 {
-	unsigned int num = va_arg(arg_ptr, unsigned int);
+	int num = va_arg(arg_ptr, unsigned int);
 	if (num < 0)
 		num *= -1;
 	return (itoa(va_arg(num, 2));
