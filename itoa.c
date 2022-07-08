@@ -11,13 +11,19 @@
 int itoa(int num, int base)
 {
 	int res = 0;
+	long int n = num;
 
-	if (num / base != 0)
+	if (n < 0)
 	{
-		res += itoa(num / base, base);
-		res += _putchar(num % base + '0');
+		n *= -1;
+		res += _putchar('-');
+	}
+	if (n / base != 0)
+	{
+		res += itoa(n / base, base);
+		res += _putchar(n % base + '0');
 	}
 	else
-		return (_putchar(num + '0'));
+		return (_putchar(n + '0'));
 	return (res);
 }
