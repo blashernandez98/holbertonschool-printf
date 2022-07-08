@@ -24,6 +24,6 @@ int itoa(int num, int base)
 		res += _putchar(n % base + '0');
 	}
 	else
-		return (_putchar(n + '0'));
+		return (res + _putchar(n + '0'));
 	return (res);
 }
