@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			func = get_spec_func(format[++i]);
+			func = get_spec(format[++i]);
 			if (func)
 				res += (*func)(arg_ptr);
 			else
