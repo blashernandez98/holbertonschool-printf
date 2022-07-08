@@ -1,7 +1,6 @@
-#include <stdarg.h>
 #ifndef MAIN_H
 #define MAIN_H
-
+#include <stdarg.h>
 typedef struct specifier
 {
 	char spec;
