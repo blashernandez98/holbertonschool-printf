@@ -22,8 +22,6 @@ int f_int(va_list arg_ptr)
 
 int f_bin(va_list arg_ptr)
 {
-	long int num = va_arg(arg_ptr, int);
-	if (num < 0)
-		num *= -1;
+	unsigned int num = va_arg(arg_ptr, unsigned int);
 	return (itoa(num, 2));
 }
