@@ -19,10 +19,11 @@ int (*get_spec(char c))(va_list)
 		{'\0', f_nil},
 		{'\n', f_nl},
 		{'d', f_int},
-		{'i', f_int}
+		{'i', f_int},
+		{'b', f_bin}
 	};
 
-	for (i = 0; i < 7; i++)
+	for (i = 0; i < 8; i++)
 	{
 		if (c == spec_arr[i].spec)
 			return (spec_arr[i].f);

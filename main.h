@@ -18,6 +18,7 @@ int f_percent(va_list);
 int f_nil(va_list);
 int f_nl(va_list);
 int f_int(va_list);
+int f_bin(va_list);
 
 int (*get_spec(char))(va_list);
 #endif
