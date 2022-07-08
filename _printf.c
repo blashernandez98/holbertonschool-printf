@@ -3,33 +3,45 @@
 #include <stddef.h>
 
 /**
- * _printf - Printf
+ * _printf - Similar to printf.
  * @format: Format string.
  *
- * Return: Number of chars printed.
+ * Return: Number of chars to stdout
  */
 
 int _printf(const char *format, ...)
 {
-	int i, res = 0;
 	va_list arg_ptr;
-	int (*func)(va_list);
+	int (*f)(va_list);
+	int i, res = 0;
 
+	if (!format)
+		return (-1);
 	va_start(arg_ptr, 0);
-	for (i = 0; format && format[i]; i++)
+	for (i = 0; format[i]; i++)
 	{
 		if (format[i] == '%')
 		{
-			func = get_spec(format[++i]);
-			if (func)
-				res += (*func)(arg_ptr);
+			i++;
+			if (format[i])
+			{
+				f = get_spec(format[i]);
+				if (!f)
+				{
+					_putchar('%');
+					_putchar(format[i]);
+					res = res + 2;
+					continue;
+				}
+				else
+					res += (*f)(arg_ptr);
+			}
 			else
-				res += (_putchar('%') + _putchar(format[i]));
+				return (-1);
 		}
 		else
 			res += _putchar(format[i]);
 	}
-	if (!format)
-		return (-1);
+	va_end(arg_ptr);
 	return (res);
 }
