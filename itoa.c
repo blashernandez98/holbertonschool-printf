@@ -4,6 +4,7 @@
  * itoa - Print num in base b.
  * @num: Number to print.
  * @base: Base.
+ * @digits: Digits for that base.
  *
  * Return: Number of digits printed.
  */
