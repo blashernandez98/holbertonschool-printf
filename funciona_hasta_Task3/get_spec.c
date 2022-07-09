@@ -3,10 +3,13 @@
 #include <stdlib.h>
 
 /**
+ * get_spec - Get correct function to print.
+ * @c: Specifier char.
  *
+ * Return: Pointer to function that prints.
  */
 
-int (*get_spec_func(char c))(va_list)
+int (*get_spec(char c))(va_list)
 {
 	int i;
 	spec_t spec_arr[] = {
@@ -14,10 +17,13 @@ int (*get_spec_func(char c))(va_list)
 		{'s', f_str},
 		{'%', f_percent},
 		{'\0', f_nil},
-		{'\n', f_nil}
+		{'\n', f_nl},
+		{'d', f_int},
+		{'i', f_int},
+		{'b', f_bin}
 	};
 
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 8; i++)
 	{
 		if (c == spec_arr[i].spec)
 			return (spec_arr[i].f);
