@@ -20,5 +20,5 @@ int itoa(unsigned int num, unsigned int base, char *digits)
 	}
 	else
 		return (res + _putchar(digits[n % base]));
-
+	return (res);
 }
