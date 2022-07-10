@@ -35,3 +35,15 @@ int f_bin(va_list arg_ptr)
 
 	return (itoa(num, 2, "01"));
 }
+
+/**
+ * f_uns - Print unsigned
+ * @arg_ptr: Pointer to arg.
+ *
+ * Return: Number of digits.
+ */
+
+int f_uns(va_list arg_ptr)
+{
+	return (itoa(va_arg(arg_ptr, unsigned int), 10, "0123456789"));
+}

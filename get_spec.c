@@ -17,7 +17,7 @@ int (*get_spec(char c))(va_list)
 		{'s', f_str},
 		{'%', f_percent},
 		{'\0', f_nil},
-		{'\n', f_nl},
+		{'u', f_uns},
 		{'d', f_int},
 		{'i', f_int},
 		{'b', f_bin}
