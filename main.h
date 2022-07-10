@@ -20,6 +20,9 @@ int f_nl(va_list);
 int f_int(va_list);
 int f_bin(va_list);
 int f_uns(va_list);
+int f_oct(va_list);
+int f_hex(va_list);
+int f_HEX(va_list);
 
 int (*get_spec(char))(va_list);
 #endif

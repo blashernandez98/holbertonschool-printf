@@ -47,3 +47,27 @@ int f_uns(va_list arg_ptr)
 {
 	return (itoa(va_arg(arg_ptr, unsigned int), 10, "0123456789"));
 }
+
+/**
+ * f_oct - Print octal
+ * @arg_ptr: Pointer to arg.
+ *
+ * Return: Number of digits.
+ */
+
+int f_oct(va_list arg_ptr)
+{
+	return (itoa(va_arg(arg_ptr, unsigned int), 8, "01234567"));
+}
+
+/**
+ * f_hex - Print hexadecimal number.
+ * @arg_ptr: Pointer to arg.
+ *
+ * Return: Number of digits printed.
+ */
+
+int f_hex(va_list arg_ptr)
+{
+	return (itoa(va_arg(arg_ptr, unsigned int), 16, "0123456789abcdef"));
+}
