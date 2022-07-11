@@ -13,11 +13,14 @@ The format string can contain characters to be directly printed to stdout or per
 **print_ints.c** - This file contains all the number print functions returned by get_spec.
 
 **print_functions1.c** - This file contains some of the printing functions.
+
 >f_ch - Function that prints a character.
 >f_str - Function that prints a string.
 >f_percent - Function that prints a percent character.
 >f_HEX - Function that prints a number in hexadecimal base with capital letters.
+
 **print_functions2.c** - This file contains the other printing functions.
+
 >f_int - Function that prints a number in base 10.
 >f_bin - Function that prints a number in base 2.
 >f_uns - Function that prints an unsigned integer in base 10.
