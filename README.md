@@ -36,7 +36,7 @@ Characters that following a '%' specify a type conversion.<br>
 Format specifiers follow this prototype: %type.<br>
 The following types are supported:<br>
 Type | Output
-------------- | -------------
+------------------- | -------------------
 %c | Single character
 %s | String of characters
 %d or %i | Signed decimal integer
