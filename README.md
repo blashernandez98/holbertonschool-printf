@@ -27,9 +27,9 @@ The format string can contain characters to be directly printed to stdout or per
 >f_oct - Function that prints a number in base 8.<br>
 >f_hex - Function that prints a number in hexadecimal base with lowercase letters.<br>
 
-**_putchar.c** - This file contains the _putchar function.
-**puts.c** - This file contains the puts (put string) function.
-**main.h** - Header file with all the definitions and external libraries used in other files.
+**_putchar.c** - This file contains the _putchar function.<br>
+**puts.c** - This file contains the puts (put string) function.<br>
+**main.h** - Header file with all the definitions and external libraries used in other files.<br>
 
 ## Format specifiers
 Characters that following a '%' specify a type conversion.
