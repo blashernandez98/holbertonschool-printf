@@ -75,3 +75,6 @@ On failure it returns -1.
 	This is a string: Sample string
 	This is a number in base 10: 43
 	This is a number in base 2: 101011
+
+## Contributors
+Facundo Blanco & Blas Hernandez
