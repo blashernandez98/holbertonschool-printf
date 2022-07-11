@@ -36,27 +36,14 @@ int f_percent(__attribute__((unused)) va_list arg_ptr)
 {
 	return (_putchar('%'));
 }
-
 /**
- * f_nl - Print new line
- * @arg_ptr: Pointer to arg.
+ * f_HEX - print hexadecimal number in uppercase
+ * @arg_ptr: pointer to arg.
  *
- * Return: 1
+ * Return: Number of digits printed
  */
 
-int f_nl(__attribute__((unused)) va_list arg_ptr)
+int f_HEX(va_list arg_ptr)
 {
-	return (_putchar('\n'));
-}
-
-/**
- * f_nil - Print nothing
- * @arg_ptr: Pointer to arg.
- *
- * Return: -1
- */
-
-int f_nil(__attribute__((unused)) va_list arg_ptr)
-{
-	return (-1);
+	return (itoa(va_arg(arg_ptr, unsigned int), 16, "0123456789ABCDEF"));
 }
