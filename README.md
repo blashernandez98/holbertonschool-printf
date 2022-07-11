@@ -27,8 +27,8 @@ The format string can contain characters to be directly printed to stdout or per
 >f_oct - File with f_oct: function that prints a number in base 8.<br>
 >f_hex - File with f_hex: function that prints a number in hexadecimal base with lowercase letters.<br>
 
-**_putchar.c** - This file contains the _putchar function.<br>
-**puts.c** - This file contains the puts (put string) function.<br>
+**_putchar.c** - File with _putchar function.<br>
+**puts.c** - File with puts (put string) function.<br>
 **main.h** - Header file with all the definitions and external libraries used in other files.<br>
 
 ## Format specifiers
@@ -37,22 +37,22 @@ Format specifiers follow this prototype:     %type.<br>
 The following types are supported:
 | Type     | Output |
 | -------- | -------|
-| %c       | Single character |
-| %s       | String of characters |
-| %d or %i | Signed decimal integer |
-| %u       | Unsiged decimal integer |
-| %b       | Unsiged binary |
-| %o       | Unsiged octal |
-| %x       | Unsiged hexadecimal (lowercase) |
-| %X       | Unsiged hexadecimal (uppercase) |
-| %%       | A % followed by another % will print a single %. |
+| c       | Single character |
+| s       | String of characters |
+| d or i | Signed decimal integer |
+| u       | Unsiged decimal integer |
+| b       | Unsiged binary |
+| o       | Unsiged octal |
+| x       | Unsiged hexadecimal (lowercase) |
+| X       | Unsiged hexadecimal (uppercase) |
+| %       | A % followed by another % will print a single %. |
 
 ## Return value
 On success _printf() returns the number of characters printed to stdout excluding the terminating null byte ('\0').<br>
 On failure it returns -1.
 
 ## Examples
-### This is a sample main function that calls our _printf() function.
+### This is a sample main function that calls our _printf() function:
 	#include "main.h"
 
 	int main(void)
