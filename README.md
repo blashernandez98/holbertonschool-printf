@@ -8,32 +8,32 @@ The format string can contain characters to be directly printed to stdout or per
 
 ## Files
 
-**_printf.c** - Main code logic of _printf.
+**_printf.c** - File containing implementation of _printf.
 
-**get_spec.c** - Function that returns correct print function depending on conversion specifier.
+**get_spec.c** - File containing get_spec function that returns correct print function depending on conversion specifier.
 
-**print_functions1.c** - This file contains some of the printing functions.
+**print_functions1.c** - File containing some of the printing functions.
 
->f_ch - Function that prints a character.<br>
->f_str - Function that prints a string.<br>
->f_percent - Function that prints a percent character.<br>
->f_HEX - Function that prints a number in hexadecimal base with capital letters.<br>
+>f_ch - File with f_ch: function that prints a character.<br>
+>f_str - File with f_str: function that prints a string.<br>
+>f_percent - File with f_percent: function that prints a percent character.<br>
+>f_HEX - File with f_HEX: function that prints a number in hexadecimal base with capital letters.<br>
 
-**print_functions2.c** - This file contains the other printing functions.
+**print_functions2.c** - File containing the other printing functions.
 
->f_int - Function that prints a number in base 10.<br>
->f_bin - Function that prints a number in base 2.<br>
->f_uns - Function that prints an unsigned integer in base 10.<br>
->f_oct - Function that prints a number in base 8.<br>
->f_hex - Function that prints a number in hexadecimal base with lowercase letters.<br>
+>f_int - File with f_int: function that prints a number in base 10.<br>
+>f_bin - File with f_bin: function that prints a number in base 2.<br>
+>f_uns - File with f_uns: function that prints an unsigned integer in base 10.<br>
+>f_oct - File with f_oct: function that prints a number in base 8.<br>
+>f_hex - File with f_hex: function that prints a number in hexadecimal base with lowercase letters.<br>
 
 **_putchar.c** - This file contains the _putchar function.<br>
 **puts.c** - This file contains the puts (put string) function.<br>
 **main.h** - Header file with all the definitions and external libraries used in other files.<br>
 
 ## Format specifiers
-Characters that following a '%' specify a type conversion.
-Format specifiers follow this prototype:     %type.
+Characters that following a '%' specify a type conversion.<br>
+Format specifiers follow this prototype:     %type.<br>
 The following types are supported:
 | Type     | Output |
 | -------- | -------|
