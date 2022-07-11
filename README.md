@@ -10,8 +10,6 @@ The format string can contain characters to be directly printed to stdout or per
 
 **get_spec.c** - Function that returns correct print function depending on conversion specifier.
 
-**print_ints.c** - This file contains all the number print functions returned by get_spec.
-
 **print_functions1.c** - This file contains some of the printing functions.
 
 >f_ch - Function that prints a character.<br>
