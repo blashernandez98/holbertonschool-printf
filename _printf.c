@@ -6,7 +6,7 @@
  * _printf - Similar to printf.
  * @format: Format string.
  *
- * Return: Number of chars to stdout
+ * Return: Number of chars to stdout.
  */
 
 int _printf(const char *format, ...)
@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 			i++;
 			if (format[i])
 			{
-				f = get_spec(format[i]);
+				f = get_spec(format[i]); /* function that get correct function to print*/
 				if (!f)
 				{
 					_putchar('%');
@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 					continue;
 				}
 				else
-					res += (*f)(arg_ptr);
+					res += (*f)(arg_ptr); /* print the content of the function */
 			}
 			else
 				return (-1);
