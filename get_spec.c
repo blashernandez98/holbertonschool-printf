@@ -23,7 +23,7 @@ int (*get_spec(char c))(va_list)
 		{'b', f_bin},
 		{'o', f_oct},
 		{'x', f_hex},
-		{'X', f_hex}
+		{'X', f_HEX}
 	};
 
 	for (i = 0; i < 11; i++)
