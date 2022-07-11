@@ -48,4 +48,5 @@ The following types are supported:
 | %%       | A % followed by another % will print a single %. |
 
 ## Return value
-On success _printf() returns the number of characters sent to stdout. On failure it returns -1.
+On success _printf() returns the number of characters printed to stdout excluding the terminating null byte ('\0').<br>
+On failure it returns -1.
