@@ -14,15 +14,15 @@ The format string can contain characters to be directly printed to stdout or per
 
 **print_functions1.c** - This file contains some of the printing functions.
 
->f_ch - Function that prints a character.
->f_str - Function that prints a string.
->f_percent - Function that prints a percent character.
->f_HEX - Function that prints a number in hexadecimal base with capital letters.
+>f_ch - Function that prints a character.<br>
+>f_str - Function that prints a string.<br>
+>f_percent - Function that prints a percent character.<br>
+>f_HEX - Function that prints a number in hexadecimal base with capital letters.<br>
 
 **print_functions2.c** - This file contains the other printing functions.
 
->f_int - Function that prints a number in base 10.
->f_bin - Function that prints a number in base 2.
->f_uns - Function that prints an unsigned integer in base 10.
->f_oct - Function that prints a number in base 8.
->f_hex - Function that prints a number in hexadecimal base with lowercase letters.
+>f_int - Function that prints a number in base 10.<br>
+>f_bin - Function that prints a number in base 2.<br>
+>f_uns - Function that prints an unsigned integer in base 10.<br>
+>f_oct - Function that prints a number in base 8.<br>
+>f_hex - Function that prints a number in hexadecimal base with lowercase letters.<br>
