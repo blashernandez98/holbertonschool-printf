@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * itoa - Print num in base b.
+ * itoa - Print number in specified base using specified digits.
  * @num: Number to print.
  * @base: Base.
  * @digits: Digits for that base.
@@ -20,6 +20,6 @@ int itoa(unsigned int num, unsigned int base, char *digits)
 		res += _putchar(digits[n % base]);
 	}
 	else
-		return (res + _putchar(digits[n % base]));
+		return (_putchar(digits[n % base]));
 	return (res);
 }
