@@ -1,12 +1,12 @@
-<h1 align="center">_printf</h1>
+# _printf
 _printf() is a custom function that prints formatted text to the standard output. Its based on the printf() function from the  C standard input/output library "<stdio.h>".
 
-<h2>Description</h2>
+## Description
 
 _printf() is a variadic function that takes at least one string argument (format string) and then a variable number of arguments.
 The format string can contain characters to be directly printed to stdout or percentage characters followed by a conversion specifier (e.g. %c where c is the conversion specifier for an unsigned char). For every "%specifier" in the format string _printf() expects one argument from the variable argument list. If the user inputs more arguments than expected from the format string _printf() will ignore them. If the user inputs less arguments than expected _printf() will have unexpected behaviour.
 
-<h2>Files</h2>
+## Files
 
 **_printf.c** - Main code logic of _printf.
 
@@ -31,21 +31,21 @@ The format string can contain characters to be directly printed to stdout or per
 **puts.c** - This file contains the puts (put string) function.
 **main.h** - Header file with all the definitions and external libraries used in other files.
 
-<h2>Format specifiers</h2>
-Characters that following a '%' specify a type conversion.<br>
-Format specifiers follow this prototype: %type.<br>
-The following types are supported:<br>
-Type | Output
-------------------- | -------------------
-%c | Single character
-%s | String of characters
-%d or %i | Signed decimal integer
-%u | Unsiged decimal integer
-%b | Unsiged binary
-%o | Unsiged octal
-%x | Unsiged hexadecimal (lowercase)
-%X | Unsiged hexadecimal (uppercase)
-%% | A % followed by another % will print a single %.
+## Format specifiers
+Characters that following a '%' specify a type conversion.
+Format specifiers follow this prototype:     %type.
+The following types are supported:
+| Type     | Output |
+| -------- | -------|
+| %c       | Single character |
+| %s       | String of characters |
+| %d or %i | Signed decimal integer |
+| %u       | Unsiged decimal integer |
+| %b       | Unsiged binary |
+| %o       | Unsiged octal |
+| %x       | Unsiged hexadecimal (lowercase) |
+| %X       | Unsiged hexadecimal (uppercase) |
+| %%       | A % followed by another % will print a single %. |
 
-<h2>Return value</h2>
+## Return value
 On success _printf() returns the number of characters sent to stdout. On failure it returns -1.
