@@ -16,7 +16,6 @@ int (*get_spec(char c))(va_list)
 		{'c', f_ch},
 		{'s', f_str},
 		{'%', f_percent},
-		{'\0', f_nil},
 		{'u', f_uns},
 		{'d', f_int},
 		{'i', f_int},
@@ -26,7 +25,7 @@ int (*get_spec(char c))(va_list)
 		{'X', f_HEX}
 	};
 
-	for (i = 0; i < 11; i++)
+	for (i = 0; i < 10; i++)
 	{
 		if (c == spec_arr[i].spec)
 			return (spec_arr[i].f);
