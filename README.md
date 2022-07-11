@@ -50,3 +50,28 @@ The following types are supported:
 ## Return value
 On success _printf() returns the number of characters printed to stdout excluding the terminating null byte ('\0').<br>
 On failure it returns -1.
+
+## Examples
+### This is a sample main function that calls our _printf() function.
+	#include "main.h"
+
+	int main(void)
+	{
+		int number = 43;
+		char character = 'K';
+		char *string = "Sample string";
+
+		_printf("This is a no-argument call to _printf()\n");
+		_printf("This is a char: %c\n", character);
+		_printf("This is a string: %s\n", string);
+		_printf("This is a number in base 10: %d\n", number);
+		_printf("This is a number in base 2: %b\n", number);
+
+		return (0);
+	}
+### Output:
+	This is a no-argument call to _printf()
+	This is a char: K
+	This is a string: Sample string
+	This is a number in base 10: 43
+	This is a number in base 2: 101011
