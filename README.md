@@ -32,6 +32,8 @@ The format string can contain characters to be directly printed to stdout or per
 **_puts.c** - File with _puts (put string) function.<br>
 **main.h** - Header file with all the definitions and external libraries used in other files.<br>
 
+## How to use
+
 ## Format specifiers
 Characters that following a '%' specify a type conversion.<br>
 Format specifiers follow this prototype:     %type.<br>
@@ -76,8 +78,10 @@ On failure it returns -1.
 	This is a string: Sample string
 	This is a number in base 10: 43
 	This is a number in base 2: 101011
-### Work Flow Diagram:
+## Work Flow Diagram:
+### Main printf
 ### ![_printf flowchart-_printf drawio](https://user-images.githubusercontent.com/105363828/178500200-02edcca3-a157-425c-91ab-3ccf25373a74.png)
+### Get specifier function
 ### ![_printf flowchart-get_spec drawio (1)](https://user-images.githubusercontent.com/105363828/178500589-c72dba33-dbb0-40bf-b89a-48dcdcc6c0c5.png)
 ## Contributors
 Facundo Blanco & Blas Hernandez
