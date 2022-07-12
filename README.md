@@ -34,6 +34,10 @@ The format string can contain characters to be directly printed to stdout or per
 
 ## How to use
 
+You must include all the files listed above and your own **.c** file with a **main** function to call **_printf**.
+Compile using:
+	gcc _printf.c get_spec.c print_function1.c print_functions2.c _itoa.c _putchar.c _puts.c { your files.c }
+
 ## Format specifiers
 Characters that following a '%' specify a type conversion.<br>
 Format specifiers follow this prototype:     %type.<br>
