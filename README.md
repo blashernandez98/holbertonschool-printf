@@ -76,6 +76,8 @@ On failure it returns -1.
 	This is a string: Sample string
 	This is a number in base 10: 43
 	This is a number in base 2: 101011
-
+### Work Flow Diagram:
+![_printf flowchart-_printf drawio](https://user-images.githubusercontent.com/105363828/178500200-02edcca3-a157-425c-91ab-3ccf25373a74.png)
+![_printf flowchart-get_spec drawio (1)](https://user-images.githubusercontent.com/105363828/178500589-c72dba33-dbb0-40bf-b89a-48dcdcc6c0c5.png)
 ## Contributors
 Facundo Blanco & Blas Hernandez
