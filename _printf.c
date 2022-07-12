@@ -17,9 +17,8 @@ int _printf(const char *format, ...)
 
 	if (!format) /* Check for NULL format */
 		return (-1);
-	
 	va_start(arg_ptr, 0);
-	
+
 	for (i = 0; format[i]; i++)
 	{
 		if (format[i] == '%') /* Check if current char is % */
@@ -34,7 +33,7 @@ int _printf(const char *format, ...)
 					res += 2;
 					continue;
 				}
-				res += (*f)(arg_ptr); /* Call function pointed by f with arg_ptr as param */
+				res += (*f)(arg_ptr); /* Call func pointed by f with arg_ptr as param */
 			}
 			else
 				return (-1);

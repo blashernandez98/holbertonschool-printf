@@ -27,7 +27,7 @@ The format string can contain characters to be directly printed to stdout or per
 >f_oct - Function that prints a number in base 8.<br>
 >f_hex - Function that prints a number in hexadecimal base with lowercase letters.<br>
 
-**_itoa.c** - File with _itoa function that prints numbers in specified base with specified digit characters.
+**_itoa.c** - File with _itoa function that prints numbers in specified base with specified digit characters.<br>
 **_putchar.c** - File with _putchar function.<br>
 **_puts.c** - File with _puts (put string) function.<br>
 **main.h** - Header file with all the definitions and external libraries used in other files.<br>

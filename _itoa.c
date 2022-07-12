@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * itoa - Print number in specified base using specified digits.
+ * _itoa - Print number in specified base using specified digits.
  * @num: Number to print.
  * @base: Base.
  * @digits: Digits for that base.
