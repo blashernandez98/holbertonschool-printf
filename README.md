@@ -14,21 +14,22 @@ The format string can contain characters to be directly printed to stdout or per
 
 **print_functions1.c** - File containing some of the printing functions.
 
->f_ch - File with f_ch: function that prints a character.<br>
->f_str - File with f_str: function that prints a string.<br>
->f_percent - File with f_percent: function that prints a percent character.<br>
->f_HEX - File with f_HEX: function that prints a number in hexadecimal base with capital letters.<br>
+>f_ch - Function that prints a character.<br>
+>f_str - Function that prints a string.<br>
+>f_percent - Function that prints a percent character.<br>
+>f_HEX - Function that prints a number in hexadecimal base with capital letters.<br>
 
 **print_functions2.c** - File containing the other printing functions.
 
->f_int - File with f_int: function that prints a number in base 10.<br>
->f_bin - File with f_bin: function that prints a number in base 2.<br>
->f_uns - File with f_uns: function that prints an unsigned integer in base 10.<br>
->f_oct - File with f_oct: function that prints a number in base 8.<br>
->f_hex - File with f_hex: function that prints a number in hexadecimal base with lowercase letters.<br>
+>f_int - Function that prints a number in base 10.<br>
+>f_bin - Function that prints a number in base 2.<br>
+>f_uns - Function that prints an unsigned integer in base 10.<br>
+>f_oct - Function that prints a number in base 8.<br>
+>f_hex - Function that prints a number in hexadecimal base with lowercase letters.<br>
 
+**_itoa.c** - File with _itoa function that prints numbers in specified base with specified digit characters.
 **_putchar.c** - File with _putchar function.<br>
-**puts.c** - File with puts (put string) function.<br>
+**_puts.c** - File with _puts (put string) function.<br>
 **main.h** - Header file with all the definitions and external libraries used in other files.<br>
 
 ## Format specifiers
@@ -61,7 +62,7 @@ On failure it returns -1.
 		char character = 'K';
 		char *string = "Sample string";
 
-		_printf("This is a no-argument call to _printf()\n");
+		_printf("This is a single-argument call to _printf()\n");
 		_printf("This is a char: %c\n", character);
 		_printf("This is a string: %s\n", string);
 		_printf("This is a number in base 10: %d\n", number);
@@ -70,7 +71,7 @@ On failure it returns -1.
 		return (0);
 	}
 ### Output:
-	This is a no-argument call to _printf()
+	This is a single-argument call to _printf()
 	This is a char: K
 	This is a string: Sample string
 	This is a number in base 10: 43

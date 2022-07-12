@@ -45,5 +45,5 @@ int f_percent(__attribute__((unused)) va_list arg_ptr)
 
 int f_HEX(va_list arg_ptr)
 {
-	return (itoa(va_arg(arg_ptr, unsigned int), 16, "0123456789ABCDEF"));
+	return (_itoa(va_arg(arg_ptr, unsigned int), 16, "0123456789ABCDEF"));
 }

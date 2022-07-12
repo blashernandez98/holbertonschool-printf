@@ -9,17 +9,17 @@
  * Return: Number of digits printed.
  */
 
-int itoa(unsigned int num, unsigned int base, char *digits)
+int _itoa(unsigned int num, unsigned int base, char *digits)
 {
 	int res = 0;
 	long int n = num;
 
 	if (n / base != 0)
 	{
-		res += itoa(n / base, base, digits);
-		res += _putchar(digits[n % base]);
+		res += _itoa(n / base, base, digits);
 	}
 	else
 		return (_putchar(digits[n % base]));
-	return (res);
+
+	return (res + _putchar(digits[n % base]));
 }

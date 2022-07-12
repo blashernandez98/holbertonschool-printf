@@ -19,7 +19,7 @@ int f_int(va_list arg_ptr)
 		_putchar('-');
 		res++;
 	}
-	return (itoa(n, 10, "0123456789") + res);
+	return (_itoa(n, 10, "0123456789") + res);
 }
 
 /**
@@ -33,7 +33,7 @@ int f_bin(va_list arg_ptr)
 {
 	unsigned int num = va_arg(arg_ptr, unsigned int);
 
-	return (itoa(num, 2, "01"));
+	return (_itoa(num, 2, "01"));
 }
 
 /**
@@ -45,7 +45,7 @@ int f_bin(va_list arg_ptr)
 
 int f_uns(va_list arg_ptr)
 {
-	return (itoa(va_arg(arg_ptr, unsigned int), 10, "0123456789"));
+	return (_itoa(va_arg(arg_ptr, unsigned int), 10, "0123456789"));
 }
 
 /**
@@ -57,7 +57,7 @@ int f_uns(va_list arg_ptr)
 
 int f_oct(va_list arg_ptr)
 {
-	return (itoa(va_arg(arg_ptr, unsigned int), 8, "01234567"));
+	return (_itoa(va_arg(arg_ptr, unsigned int), 8, "01234567"));
 }
 
 /**
@@ -69,5 +69,5 @@ int f_oct(va_list arg_ptr)
 
 int f_hex(va_list arg_ptr)
 {
-	return (itoa(va_arg(arg_ptr, unsigned int), 16, "0123456789abcdef"));
+	return (_itoa(va_arg(arg_ptr, unsigned int), 16, "0123456789abcdef"));
 }

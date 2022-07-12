@@ -6,7 +6,8 @@
  * get_spec - Get correct function to print.
  * @c: Specifier char.
  *
- * Return: Pointer to function that prints.
+ * Return: Pointer to function that prints if known specifier.
+ * NULL otherwise.
  */
 
 int (*get_spec(char c))(va_list)
